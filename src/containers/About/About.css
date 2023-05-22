@@ -1,0 +1,14 @@
+.about-container {
+  color: #34413a;
+  max-width: 60%;
+  margin: 100px auto;
+}
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 25px;
+}
