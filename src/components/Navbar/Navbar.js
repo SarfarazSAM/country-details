@@ -7,7 +7,7 @@ const Navbar = () => {
   // const [openMenu, setOpenMenu] = useState(false);
   return (
     <nav className="navbar">
-      <h1>The Country details</h1>
+      <h1>Country Insights</h1>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>

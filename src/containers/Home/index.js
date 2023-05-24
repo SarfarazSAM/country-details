@@ -4,6 +4,7 @@ import { apiURL } from "../../utils/api";
 import useFetch from "../../utils/useFetch";
 import CountryFilter from "../../components/Filter";
 import Search from "../../components/Search";
+import { Alert } from "../../components/Alert";
 
 const Country = () => {
   const [key, setKey] = useState(Math.random());
@@ -32,7 +33,8 @@ const Country = () => {
       </div>
       <div className="bottom_country">
         {isPending && !error && <h3>Loading...</h3>}
-        {error && !isPending && <h3>{error}</h3>}
+        {/* {error && !isPending && <h3>{error}</h3>} */}
+        <Alert msg={error && !isPending ? "Country not found" : null} />
         {data?.map((country, index) => (
           <Link key={index} to={`/country/${country.name.common}`}>
             <div className="country_card">

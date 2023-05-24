@@ -11,7 +11,16 @@
   border-radius: 5px;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
+
+.container button:hover {
+  background-color: #728b84;
+}
+.container button:active {
+  transform: scale(0.95);
+}
+
 .country-detail {
   display: flex;
   justify-content: center;

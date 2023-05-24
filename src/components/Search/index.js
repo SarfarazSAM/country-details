@@ -10,11 +10,11 @@ const Search = ({ onSearch }) => {
     <form>
       <input
         type="text"
-        placeholder="search a country..."
+        placeholder="Search a country"
         value={searchValue}
         onChange={(e) => setSearchValue(e.target.value)}
       />
-      <input type="submit" value="search" onClick={submit} />
+      <input type="submit" value="Search" onClick={submit} />
     </form>
   );
 };

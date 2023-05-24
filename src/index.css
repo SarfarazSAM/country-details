@@ -34,6 +34,13 @@ html {
   border-radius: 5px;
   padding-bottom: 20px;
   color: #34413a;
+  transition: background-color 0.3s ease;
+}
+.country_card:hover {
+  background-color: #99afa9;
+}
+.country_card:active {
+  transform: scale(0.95);
 }
 .country_card h3 {
   padding: 20px 25px 10px 25px;
@@ -66,16 +73,28 @@ html {
   border: none;
   outline: none;
   border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
+.search input[type="text"]:active {
+  transform: scale(0.95);
+}
+
 .search input[type="submit"] {
   background-color: var(--bg2color);
-  padding: 15px;
+  padding: 15px 20px;
   margin-left: 15px;
   border: none;
   outline: none;
   border-radius: 3px;
   font-weight: 700;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.search input[type="submit"]:hover {
+  background-color: #728b84;
+}
+.search input[type="submit"]:active {
+  transform: scale(0.95);
 }
 /* filter */
 .filter select {
@@ -86,7 +105,12 @@ html {
   border-radius: 3px;
   font-weight: 700;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+.filter select:hover {
+  background-color: #728b84;
+}
+
 .filter .option {
   padding: 15px;
   border: none;
